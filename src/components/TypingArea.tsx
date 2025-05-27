@@ -97,7 +97,7 @@ export function TypingArea({
   // Split text into words and create lines that fit properly
   const words = text.split(' ');
   const lines: string[][] = [];
-  const maxWordsPerLine = 10; // Reduced to prevent overflow
+  const maxWordsPerLine = 11; // Reduced to prevent overflow
   
   for (let i = 0; i < words.length; i += maxWordsPerLine) {
     lines.push(words.slice(i, i + maxWordsPerLine));
@@ -154,7 +154,7 @@ export function TypingArea({
       />
       
       <div 
-        className="relative font-atkinson font-bold text-2xl leading-relaxed p-8 min-h-[200px] cursor-text focus-within:outline-none"
+        className="relative font-atkinson font-semibold text-2xl leading-relaxed p-8 min-h-[200px] cursor-text focus-within:outline-none"
         onClick={handleContainerClick}
         style={{ color: 'var(--theme-typebox)' }}
       >

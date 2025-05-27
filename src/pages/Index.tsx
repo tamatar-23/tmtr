@@ -71,9 +71,9 @@ const Index = () => {
   return (
     <div className="min-h-screen text-foreground" style={{ backgroundColor: 'var(--theme-background)' }}>
       {/* Header */}
-      <header className="flex justify-between items-center p-6">
-        <Link to="/" className="text-2xl font-bold" style={{ color: 'var(--theme-title)' }}>
-          TypeFlow
+      <header className="flex justify-between items-center p-9">
+        <Link to="/" className="text-3xl font-bold" style={{ color: 'var(--theme-title)' }}>
+          Type.TMTR
         </Link>
         <Link to="/user">
           <Button variant="ghost" size="icon">
@@ -138,9 +138,9 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="fixed bottom-0 left-0 right-0 flex justify-between items-center p-6">
+      <footer className="fixed bottom-0 left-0 right-0 flex justify-between items-center p-9">
         <a
-          href="https://github.com"
+          href="https://github.com/tamatar-23/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground transition-colors"

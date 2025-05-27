@@ -15,9 +15,8 @@ const User = () => {
         <header className="flex justify-between items-center p-6 border-b border-border">
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity" style={{ color: 'var(--theme-stats)' }}>
             <ArrowLeft className="h-4 w-4" />
-            Back to Test
           </Link>
-          <h1 className="text-2xl font-bold" style={{ color: 'var(--theme-title)' }}>User Profile</h1>
+          <h1 className="text-2xl font-bold flex text-center" style={{ color: 'var(--theme-title)' }}>User Profile</h1>
           <div></div>
         </header>
 

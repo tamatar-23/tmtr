@@ -45,9 +45,9 @@ const Results = () => {
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--theme-background)', color: 'var(--theme-typebox)' }}>
       {/* Header */}
-      <header className="flex justify-between items-center p-6">
+      <header className="flex justify-between items-center p-9">
         <Link to="/" className="text-2xl font-bold" style={{ color: 'var(--theme-title)' }}>
-          TypeFlow
+          Type.TMTR
         </Link>
         <Button onClick={retryTest} variant="outline" className="bg-transparent border-opacity-60 hover:border-opacity-100 transition-opacity" style={{ borderColor: 'var(--theme-stats)', color: 'var(--theme-stats)' }}>
           <RotateCcw className="h-4 w-4 mr-2" />
@@ -74,30 +74,30 @@ const Results = () => {
           {/* Secondary Stats */}
           <div className="flex justify-center items-center gap-12 mb-12" style={{ color: 'var(--theme-stats)' }}>
             <div className="text-center">
-              <div className="text-sm mb-1">test type</div>
-              <div style={{ color: 'var(--theme-title)' }}>
+              <div className="text-sm font-semibold mb-1">test type</div>
+              <div className="font-meduim" style={{ color: 'var(--theme-title)' }}>
                 {result.settings.mode === 'time' ? `time ${result.settings.duration}` : `words ${result.settings.duration}`}
               </div>
             </div>
             
             <div className="text-center">
-              <div className="text-sm mb-1">raw</div>
-              <div style={{ color: 'var(--theme-title)' }}>{Math.round(result.wpm * 1.2)}</div>
+              <div className="text-sm font-semibold mb-1">raw</div>
+              <div className="font-meduim" style={{ color: 'var(--theme-title)' }}>{Math.round(result.wpm * 1.1)}</div>
             </div>
             
             <div className="text-center">
-              <div className="text-sm mb-1">characters</div>
-              <div style={{ color: 'var(--theme-title)' }}>{result.correct}/{result.incorrect}/{result.missed}/{result.charCount}</div>
+              <div className="text-sm font-semibold mb-1">characters</div>
+              <div className="font-meduim" style={{ color: 'var(--theme-title)' }}>{result.correct}/{result.incorrect}/{result.missed}/{result.charCount}</div>
             </div>
             
             <div className="text-center">
-              <div className="text-sm mb-1">consistency</div>
-              <div style={{ color: 'var(--theme-title)' }}>{Math.round(result.accuracy * 0.9)}%</div>
+              <div className="text-sm font-semibold mb-1">consistency</div>
+              <div className="font-meduim" style={{ color: 'var(--theme-title)' }}>{Math.round(result.accuracy * 0.9)}%</div>
             </div>
             
             <div className="text-center">
-              <div className="text-sm mb-1">time</div>
-              <div style={{ color: 'var(--theme-title)' }}>{Math.round(result.totalTime)}s</div>
+              <div className="text-sm font-semibold mb-1">time</div>
+              <div className="font-meduim" style={{ color: 'var(--theme-title)' }}>{Math.round(result.totalTime)}s</div>
             </div>
           </div>
 
